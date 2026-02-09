@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang=en><meta charset=utf-8><title>My First Parcel App</title><body>
+    <nav>
+      <div class=button>
+        <button>File</button>
+        <menu>
+          <p>New</p>
+          <p>Open</p>
+          <p>Save</p>
+          <p>Print</p>
+          <p>Close</p>
+        </menu>
+      </div>
+
+      <div class=button>
+        <button>Edit</button>
+        <menu>
+          <p>Undo</p>
+          <p>Redo</p>
+          <p>Cut</p>
+          <p>Copy</p>
+          <p>Paste</p>
+          <p>Delete</p>
+          <p>Select All</p>
+        </menu>
+      </div>
+
+      <div class=button>
+        <button>View</button>
+        <menu>
+          <p>Zoom In</p>
+          <p>Zoom Out</p>
+          <p>Actual Size</p>
+          <p>Fit Page</p>
+          <p>Fit Width</p>
+          <p>Fit Height</p>
+          <p>Rotate Left</p>
+          <p>Rotate Right</p>
+          <p>Full Screen</p>
+        </menu>
+      </div>
+    </nav>
+  
+
+
+<style>body{background-color:#fafad2;margin:0}nav{background-color:green;justify-items:center;width:100%;height:3rem;display:flex}.button{flex-direction:column;align-items:center;width:8rem;height:100%;display:flex;& menu{flex-direction:column;width:100%;margin:0;padding:0;display:none}& p{text-align:center;margin:0;padding:1rem}& p:hover{cursor:grab;background-color:#ff0}& button{text-align:center;background-color:#0000;border:none;width:100%;height:100%;padding:1rem;font-size:1.25rem;font-weight:700;display:flex}&:hover{& *{background-color:#adff2f}& menu{background-color:#adff2f;display:flex}}& button:focus{background-color:#adff2f;&+menu{background-color:#adff2f;display:flex}}}</style>

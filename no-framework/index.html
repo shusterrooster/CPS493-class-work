@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu Example</title>
+  </head>
+  <body>
+    <nav>
+      <div class="button">
+        <button>File</button>
+        <menu>
+          <p>New</p>
+          <p>Open</p>
+          <p>Save</p>
+          <p>Print</p>
+          <p>Close</p>
+        </menu>
+      </div>
+
+      <div class="button">
+        <button>Edit</button>
+        <menu>
+          <p>Undo</p>
+          <p>Redo</p>
+          <p>Cut</p>
+          <p>Copy</p>
+          <p>Paste</p>
+          <p>Delete</p>
+          <p>Select All</p>
+        </menu>
+      </div>
+
+      <div class="button">
+        <button>View</button>
+        <menu>
+          <p>Zoom In</p>
+          <p>Zoom Out</p>
+          <p>Actual Size</p>
+          <p>Fit Page</p>
+          <p>Fit Width</p>
+          <p>Fit Height</p>
+          <p>Rotate Left</p>
+          <p>Rotate Right</p>
+          <p>Full Screen</p>
+        </menu>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+  }
+
+  nav {
+    width: 100%;
+    height: 3rem;
+    background-color: green;
+    display: flex;
+    justify-items: center;
+  }
+
+  .button {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8rem;
+
+    menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      padding: 1rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    p:hover {
+      background-color: yellow;
+      cursor: grab;
+    }
+
+    button {
+      background-color: transparent;
+      font-size: 1.25rem;
+      font-weight: bold;
+      border: none;
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+    }
+
+    &:hover {
+      & * {
+        background-color: greenyellow;
+      }
+
+      menu {
+        background-color: greenyellow;
+        display: flex;
+      }
+    }
+
+    button:focus {
+      background-color: greenyellow;
+
+      & + menu {
+        background-color: greenyellow;
+        display: flex;
+      }
+    }
+  }
+</style>
