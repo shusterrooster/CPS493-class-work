@@ -8,9 +8,10 @@
 coverage/
 lib/
 logs/
-node_modules/
 parcel-bundle-reports/
 tmp
+
+*/node_modules/
 
 /target/
 

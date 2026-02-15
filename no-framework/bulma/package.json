@@ -1,0 +1,14 @@
+{
+  "name": "bulma",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "bulma": "^1.0.4"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}

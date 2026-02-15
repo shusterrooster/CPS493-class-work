@@ -1,0 +1,294 @@
+<!DOCTYPE html><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css><title>First Bulma Example</title><body>
+    <nav class="is-primary navbar" role=navigation aria-label="main navigation">
+      <div class=navbar-brand>
+        <a class=navbar-item href=https://bulma.io>
+          <svg xmlns:xmlns=http://www.w3.org/2000/svg width=640 height=160 fill=none viewBox="0 0 640 160"><path fill=#000 fill-rule=evenodd d="M170 132.571V27.591q0-3.069 2.746-4.845 2.745-1.777 6.46-1.777h31.171q32.463 0 32.463 28.425 0 19.704-13.728 25.68 8.236 3.23 12.436 9.125t4.199 17.201v3.391q0 17.927-8.721 26.084-8.722 8.156-23.581 8.156h-34.239q-4.038 0-6.622-1.938-2.584-1.939-2.584-4.522m20.834-11.952h18.251q15.666 0 15.666-17.604v-2.584q0-9.045-3.957-13.082t-11.709-4.038h-18.251Zm0-53.782h18.089q6.299 0 9.61-3.715t3.311-10.175q0-6.299-3.473-9.932t-9.609-3.634h-17.928Zm69.449 36.178V27.429q0-3.23 3.068-4.845t7.43-1.615q4.36 0 7.429 1.615t3.069 4.845v75.586q0 18.573 17.765 18.573t17.766-18.573V27.429q0-3.23 3.069-4.845t7.429-1.615 7.43 1.615q3.068 1.615 3.068 4.845v75.586q0 19.058-10.579 28.021Q316.649 140 299.044 140q-17.604 0-28.183-8.883-10.578-8.883-10.578-28.102m96.42 29.394V27.429q0-3.23 3.068-4.845t7.43-1.615q4.36 0 7.429 1.615t3.069 4.845v93.19h39.407q2.908 0 4.603 2.746 1.696 2.745 1.696 6.46 0 3.714-1.696 6.46t-4.603 2.746h-51.198q-3.714 0-6.46-1.777-2.745-1.776-2.745-4.845m78.169 0V31.467q0-5.33 2.988-7.914t7.51-2.584q5.976 0 9.206 2.1t7.106 9.044l19.866 36.178 19.865-36.178q3.876-6.945 7.187-9.044t9.287-2.1q4.522 0 7.51 2.584t2.988 7.914v100.942q0 3.069-3.149 4.845-3.15 1.777-7.349 1.777-4.361 0-7.429-1.777t-3.069-4.845V62.961l-18.896 33.594q-2.262 4.199-7.107 4.199-4.683 0-6.945-4.2L455.868 61.67v70.74q0 3.069-3.149 4.845-3.15 1.777-7.349 1.777-4.36 0-7.429-1.777t-3.069-4.845m104.657-2.099q0-.323.323-1.616l31.171-101.588q.969-3.39 4.764-5.249Q579.583 20 584.428 20t8.721 1.857 4.846 5.25l31.171 101.587q.323 1.292.323 1.616 0 3.552-4.361 6.137t-8.883 2.584q-5.976 0-7.106-4.199l-6.138-21.481h-36.985l-6.137 21.481q-1.131 4.199-7.106 4.199-4.685 0-8.964-2.503t-4.28-6.218m30.848-33.433h28.102l-14.051-49.582Z" class=bd-svg-black clip-rule=evenodd /><path fill=#00d1b2 fill-rule=evenodd d="m0 110 10-70L50 0l50 50-30 30 40 40-60 40Z" clip-rule=evenodd /></svg>
+        </a>
+
+        <a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample>
+          <span aria-hidden=true></span>
+          <span aria-hidden=true></span>
+          <span aria-hidden=true></span>
+          <span aria-hidden=true></span>
+        </a>
+      </div>
+
+      <div class=navbar-menu>
+        <div class=navbar-start>
+          <a class=navbar-item href=https://bulma.io> Home </a>
+
+          <div class="has-dropdown is-hoverable navbar-item">
+            <a class=navbar-link> Docs </a>
+
+            <div class=navbar-dropdown>
+              <a class=navbar-item> Overview </a>
+              <a class=navbar-item> Modifiers </a>
+              <a class=navbar-item> Columns </a>
+              <a class=navbar-item> Layout </a>
+              <a class=navbar-item> Form </a>
+              <hr class=navbar-divider>
+              <a class=navbar-item> Elements </a>
+              <a class="is-selected navbar-item"> Components </a>
+            </div>
+          </div>
+        </div>
+
+        <div class=navbar-end>
+          <div class=navbar-item>
+            <div class="field is-grouped">
+              <p class=control>
+                <a class="bd-tw-button button" data-social-network=Twitter data-social-action=tweet data-social-target=https://bulma.io target=_blank href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                  <span class=icon>
+                    <i class="fa-twitter fab"></i>
+                  </span>
+                  <span> Tweet </span>
+                </a>
+              </p>
+              <p class=control>
+                <a class="button is-primary" href=https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip>
+                  <span class=icon>
+                    <i class="fa-download fas"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class=section>
+      <div class="columns container">
+        <div class="column is-one-quarter">
+          <div class=card>
+            <header class=card-header>
+              <p class=card-header-title>Component</p>
+              <button class=card-header-icon aria-label="more options">
+                <span class=icon>
+                  <i class="fa-angle-down fas" aria-hidden=true></i>
+                </span>
+              </button>
+            </header>
+            <div class=card-content>
+              <div class=content>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <a href=#>@bulmaio</a>. <a href=#>#css</a>
+                <a href=#>#responsive</a>
+                <br>
+                <time datetime=2016-1-1>11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class=card-footer>
+              <a href=# class=card-footer-item>Save</a>
+              <a href=# class=card-footer-item>Edit</a>
+              <a href=# class=card-footer-item>Delete</a>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-half">
+          <article class="is-primary panel">
+            <div class="is-boxed is-centered tabs">
+              <ul>
+                <li class=is-active>
+                  <a>
+                    <span class="icon is-small"><i class="fa-clipboard-list fas" aria-hidden=true></i></span>
+                    <span>Current</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fa-calendar-times fas" aria-hidden=true></i></span>
+                    <span>Completed</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fa-calendar-day fas" aria-hidden=true></i></span>
+                    <span>Upcoming</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span class="icon is-small"><i class="fa-calendar fas" aria-hidden=true></i></span>
+                    <span>All</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class=panel-block>
+              <p class="control has-icons-left">
+                <input class="input is-primary" placeholder="New Task">
+
+                <span class="icon is-left">
+                  <i class="fa-calendar-plus fas" aria-hidden=true></i>
+                </span>
+              </p>
+            </div>
+
+            <label class="checkbox panel-block">
+              <input type=checkbox checked>
+              Replicate page for class
+            </label>
+
+            <label class="checkbox panel-block">
+              <input type=checkbox>
+              Drink water
+            </label>
+
+            <label class="checkbox panel-block">
+              <input type=checkbox>
+              Remember to stretch!
+            </label>
+
+            <label class="checkbox panel-block">
+              <input type=checkbox>
+              Bulma is alright, not my fav
+            </label>
+          </article>
+
+          <article class="is-primary message">
+            <div class=message-header>
+              <p>Give up all of your personal data</p>
+              <button class=delete aria-label=delete></button>
+            </div>
+            <div class=message-body>
+              Scan your government ID into every website and give all your
+              information to every service that requests it and watch as your
+              data is leaked to every facet of the web.
+
+              <a href=https://haveibeenpwned.com/>Sharing is caring!</a>
+
+              <progress class="is-success progress" value=60 max=100>
+                60%
+              </progress>
+            </div>
+          </article>
+
+          <div class=field>
+            <label class=label>Name</label>
+            <div class=control>
+              <input class=input placeholder="Text input">
+            </div>
+          </div>
+
+          <div class=field>
+            <label class=label>Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" placeholder="Text input" value=bulma>
+              <span class="icon is-left is-small">
+                <i class="fa-user fas"></i>
+              </span>
+              <span class="icon is-right is-small">
+                <i class="fa-check fas"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
+
+          <div class=field>
+            <label class=label>Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type=email placeholder="Email input" value=hello@>
+              <span class="icon is-left is-small">
+                <i class="fa-envelope fas"></i>
+              </span>
+              <span class="icon is-right is-small">
+                <i class="fa-exclamation-triangle fas"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+
+          <div class=field>
+            <label class=label>Subject</label>
+            <div class=control>
+              <div class=select>
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class=field>
+            <label class=label>Message</label>
+            <div class=control>
+              <textarea class=textarea placeholder=Textarea></textarea>
+            </div>
+          </div>
+
+          <div class=field>
+            <div class=control>
+              <label class=checkbox>
+                <input type=checkbox>
+                I agree to the <a href=#>terms and conditions</a>
+              </label>
+            </div>
+          </div>
+
+          <div class=field>
+            <div class=control>
+              <label class=radio>
+                <input type=radio name=question>
+                Yes
+              </label>
+              <label class=radio>
+                <input type=radio name=question>
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class=control>
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class=control>
+              <button class="button is-light is-link">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-quarter">
+          <h1 class=title>Table of contents</h1>
+          <h2 class=subtitle>Explore my pages...</h2>
+
+          <aside class=menu>
+            <p class=menu-label>General</p>
+            <ul class=menu-list>
+              <li><a>Dashboard</a></li>
+              <li><a>Customers</a></li>
+            </ul>
+            <p class=menu-label>Administration</p>
+            <ul class=menu-list>
+              <li><a>Team Settings</a></li>
+              <li>
+                <a class=is-active>Manage Your Team</a>
+                <ul>
+                  <li><a>Members</a></li>
+                  <li><a>Plugins</a></li>
+                  <li><a>Add a member</a></li>
+                </ul>
+              </li>
+              <li><a>Invitations</a></li>
+              <li><a>Cloud Storage Environment Settings</a></li>
+              <li><a>Authentication</a></li>
+            </ul>
+            <p class=menu-label>Transactions</p>
+            <ul class=menu-list>
+              <li><a>Payments</a></li>
+              <li><a>Transfers</a></li>
+              <li><a>Balance</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  
+
+
+<style></style>
